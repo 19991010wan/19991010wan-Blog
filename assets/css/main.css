@@ -1178,7 +1178,12 @@ footer .copyright {
 .post-list-small-mate a {
   text-decoration: none;
   font-size: 12px;
+  color: #00688B;
   /*margin-left: 20px;*/
+}
+
+.post-list-small-mate a:hover {
+  color: #1289F8;
 }
 
 a.older-posts, a.newer-posts {
