@@ -1172,19 +1172,13 @@ footer .copyright {
 }
 
 .post-list-small-mate {
-  /*height: 30px;*/
-  background-size: 100% 100%;
-  /*margin-top: 3px;*/
-  float: left;
-  /*color: #4F4F4F;*/
+
 }
 
 .post-list-small-mate a {
-  font-family: 'PT Serif', serif;
   text-decoration: none;
-  color: #263959;
   font-size: 12px;
-  margin-left: 20px;
+  /*margin-left: 20px;*/
 }
 
 a.older-posts, a.newer-posts {
