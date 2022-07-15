@@ -925,8 +925,8 @@ footer .copyright {
       font-size: 12px;
       color: #00688B;
       /*margin-left: 20px;*/ }
-    .post .post-content .post-list-small-mate:hover {
-      color: #1289F8; }
+      .post .post-content .post-list-small-mate a:hover {
+        color: #1289F8; }
 
 a.older-posts, a.newer-posts {
   font-size: 18px;
