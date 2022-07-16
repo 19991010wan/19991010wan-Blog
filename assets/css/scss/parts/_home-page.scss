@@ -183,7 +183,7 @@ footer {
       a {
         text-decoration: none;
         font-size: 12px;
-        color: #00688B;
+        color: #868696;
         /*margin-left: 20px;*/
         &:hover {
           color: #1289F8;
@@ -207,4 +207,65 @@ a.older-posts:hover {
 
 a.newer-posts:hover {
   transform: translateX(-5px);
+}
+
+.page-icon {
+  margin: 20px 0 0 0;
+  font-size: 0;
+  text-align: center;
+
+  ul {
+    li {
+      float: left;
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        color: #005aa0;
+      }
+
+      a,
+      .page-disabled,
+      .page-next {
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        padding: 4px 10px 5px;
+        font-size: 14px;
+        margin-right: 10px;
+      }
+
+      .page-current {
+        color: #ff6600;
+        padding: 4px 10px 5px;
+        font-size: 14PX;
+        /*修复行内元素之间空隙间隔*/
+      }
+
+      .page-disabled {
+        color: #ccc;
+      }
+
+      .page-next i,
+      .page-disabled i {
+        cursor: pointer;
+        /*设置鼠标经过时的显示状态，这里设置的是显示状态为小手状态*/
+        display: inline-block;
+        /*设置显示的方式为行内块元素*/
+        width: 5px;
+        height: 9px;
+        background-image: url(http://img.mukewang.com/547fdbc60001bab900880700.gif);
+        /*获取图标的背景链接*/
+      }
+
+      .page-disabled i {
+        background-position: -80px -608px;
+        margin-right: 3px;
+      }
+
+      .page-next i {
+        background-position: -62px -608px;
+        margin-left: 3px;
+      }
+    }
+  }
 }
