@@ -1,4 +1,4 @@
-<div class="container">
+<!--<div class="container">
   <nav class="pagination" role="pagination">
     <ul>
       {% if paginator.previous_page %}
@@ -18,4 +18,35 @@
       {% endif %}
     </ul>
   </nav>
+</div>-->
+
+
+
+<div class="container">
+  <nav class="pagination" role="pagination">
+    {% if paginator.total_pages > 1 %}
+    <div class="page-icon">
+      <ul>
+        <li><span class="page-disabled"><i></i>上一页</span></li>
+        <li><span class="page-current">1</span></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">6</a></li>
+        <li><a href="#">7</a> ……</li>
+        <li><a href="#">199</a></li>
+        <li><a href="#">200</a></li>
+        <li><a class="page-next" href="#">下一页<i></i></a></li>
+      </ul>
+    </div>
+    {% endif %}
+  </nav>
 </div>
+
+<!--<button class="firstPage" onclick="first_click()" ><img src="./imgs/page-icon/left-end.png"/></button>
+<button class="beforePage" onclick="prev_click()" ><img src="./imgs/page-icon/page-left.png"/></button>
+<button>第<input id="currentPage" onchange="choose_page()" type="text" value="1"/>页</button>
+<button>/&nbsp;&nbsp;&nbsp;共<input id="totalPage" type="button" value="3" readonly="readonly">页</button>
+<button class="nextPage" onclick="next_click()"><img src="./imgs/page-icon/page-right.png"/></button>
+<button class="lastPage" onclick="last_click()"><img src="./imgs/page-icon/right-end.png"/></button>-->
