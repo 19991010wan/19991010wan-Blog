@@ -948,7 +948,9 @@ a.newer-posts:hover {
   .page-icon ul {
     display: flex;
     flex-direction: row;
-    list-style: none; }
+    list-style: none;
+    margin: 0;
+    padding: 0; }
     .page-icon ul li a {
       display: inline-block;
       text-decoration: none;
