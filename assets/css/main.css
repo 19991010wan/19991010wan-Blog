@@ -942,6 +942,7 @@ a.newer-posts:hover {
   transform: translateX(-5px); }
 
 .page-icon {
+  flex: 1;
   text-align: center; }
   .page-icon ul li {
     float: left;
@@ -958,6 +959,7 @@ a.newer-posts:hover {
       !*获取图标的背景链接*!
     }*/ }
     .page-icon ul li a {
+      display: inline-block;
       text-decoration: none;
       color: #005aa0; }
     .page-icon ul li a,
