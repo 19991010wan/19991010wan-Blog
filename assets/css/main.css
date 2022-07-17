@@ -826,6 +826,7 @@ table tfoot td {
 .content-box {
   padding: 20px;
   padding-left: 260px;
+  justify-content: center;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -1140,6 +1141,7 @@ a.newer-posts:hover {
   .content-box {
     padding: 20px 10px;
     display: flex;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: stretch; }
