@@ -942,16 +942,41 @@ a.older-posts:hover {
 a.newer-posts:hover {
   transform: translateX(-5px); }
 
+.page-icon {
+  flex: 1;
+  text-align: center; }
+  .page-icon ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none; }
+    .page-icon ul li a {
+      display: inline-block;
+      text-decoration: none;
+      color: #005aa0; }
+    .page-icon ul li a,
+    .page-icon ul li .page-disabled,
+    .page-icon ul li .page-next {
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      padding: 4px 10px 5px;
+      font-size: 14px;
+      margin-right: 10px; }
+    .page-icon ul li .page-current {
+      color: #ff6600;
+      padding: 4px 10px 5px;
+      font-size: 14PX;
+      /*修复行内元素之间空隙间隔*/ }
+    .page-icon ul li .page-disabled {
+      color: #ccc; }
+    .page-icon ul li .page-disabled i {
+      margin-right: 3px; }
+    .page-icon ul li .page-next i {
+      margin-left: 3px; }
+
 /*
 .page-icon {
   flex: 1;
   text-align: center;
-
-  ul {
-    li {
-      float: left;
-      list-style: none;
-
       a {
         display: inline-block;
         text-decoration: none;
@@ -986,36 +1011,7 @@ a.newer-posts:hover {
       .page-next i {
         margin-left: 3px;
       }
-    }
-  }
 }*/
-.page-icon {
-  flex: 1;
-  text-align: center; }
-  .page-icon a {
-    display: inline-block;
-    text-decoration: none;
-    color: #005aa0; }
-  .page-icon a,
-  .page-icon .page-disabled,
-  .page-icon .page-next {
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    padding: 4px 10px 5px;
-    font-size: 14px;
-    margin-right: 10px; }
-  .page-icon .page-current {
-    color: #ff6600;
-    padding: 4px 10px 5px;
-    font-size: 14PX;
-    /*修复行内元素之间空隙间隔*/ }
-  .page-icon .page-disabled {
-    color: #ccc; }
-  .page-icon .page-disabled i {
-    margin-right: 3px; }
-  .page-icon .page-next i {
-    margin-left: 3px; }
-
 /* - - - - - - - - - - Post Page Styles - - - - - - - - - - */
 .wrap-content {
   padding: 20px; }
