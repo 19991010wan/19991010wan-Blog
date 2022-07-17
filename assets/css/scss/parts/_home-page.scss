@@ -210,7 +210,7 @@ a.newer-posts:hover {
 }
 
 .page-icon {
-  margin: 20px auto;
+
   text-align: center;
 
   ul {
@@ -244,16 +244,16 @@ a.newer-posts:hover {
         color: #ccc;
       }
 
-      .page-next i,
+      /*.page-next i,
       .page-disabled i {
         cursor: pointer;
-        /*设置鼠标经过时的显示状态，这里设置的是显示状态为小手状态*/
+        !*设置鼠标经过时的显示状态，这里设置的是显示状态为小手状态*!
         display: inline-block;
-        /*设置显示的方式为行内块元素*/
+        !*设置显示的方式为行内块元素*!
         width: 5px;
         height: 9px;
         background-image: url(http://img.mukewang.com/547fdbc60001bab900880700.gif);
-        /*获取图标的背景链接*/
+        !*获取图标的背景链接*!
       }
 
       .page-disabled i {
@@ -264,7 +264,7 @@ a.newer-posts:hover {
       .page-next i {
         background-position: -62px -608px;
         margin-left: 3px;
-      }
+      }*/
     }
   }
 }
