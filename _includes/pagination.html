@@ -1,4 +1,4 @@
-<!--<div class="container">
+<div class="container">
   <nav class="pagination" role="pagination">
     <ul>
       {% if paginator.previous_page %}
@@ -18,29 +18,7 @@
       {% endif %}
     </ul>
   </nav>
-</div>-->
-
-
-
-<!--<div class="container">
-  <nav class="pagination" role="pagination">
-    {% if paginator.total_pages > 1 %}
-    <div class="page-icon">
-      <ul>
-        <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
-        &lt;!&ndash;<li><span class="page-disabled"><i class="fa fa-caret-left"></i>上一页</span></li>&ndash;&gt;
-        <li><span class="page-current">1</span></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
-        <li><a><i class="fa fa-angle-right"></i></a></li>
-        &lt;!&ndash;<li><a class="page-next" href="#">下一页<i class="fa fa-caret-right"></i></a></li>&ndash;&gt;
-      </ul>
-    </div>
-    {% endif %}
-  </nav>
-</div>-->
+</div>
 
 <div class="container">
   <nav class="pagination" role="pagination">
@@ -63,6 +41,7 @@
             // count: 89,
             current: pagecount
           });
+          location.href="{{ site.baseurl }}/page/{{ paginator.next_page }}/"
           //这里我写个ajax吧
 
           //如果你不用ajax分页，你可以直接在这里location.href='xxx.html?page='+pagecount 作跳转，这样的话，页面刷新后，你要传递current进来。
@@ -73,3 +52,23 @@
   </nav>
 </div>
 
+
+<!--<div class="container">
+  <nav class="pagination" role="pagination">
+    {% if paginator.total_pages > 1 %}
+    <div class="page-icon">
+      <ul>
+        <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
+        &lt;!&ndash;<li><span class="page-disabled"><i class="fa fa-caret-left"></i>上一页</span></li>&ndash;&gt;
+        <li><span class="page-current">1</span></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a><i class="fa fa-angle-right"></i></a></li>
+        &lt;!&ndash;<li><a class="page-next" href="#">下一页<i class="fa fa-caret-right"></i></a></li>&ndash;&gt;
+      </ul>
+    </div>
+    {% endif %}
+  </nav>
+</div>-->
