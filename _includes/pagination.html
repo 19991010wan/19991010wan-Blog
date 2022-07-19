@@ -1,4 +1,4 @@
-<!--<div class="container">
+<div class="container">
   <nav class="pagination" role="pagination">
     <ul>
       {% if paginator.previous_page %}
@@ -18,7 +18,7 @@
       {% endif %}
     </ul>
   </nav>
-</div>-->
+</div>
 
 
 
@@ -46,15 +46,30 @@
   <nav class="pagination" role="pagination">
     {% if paginator.total_pages > 1 %}
     <div id="pageTool"></div>
-    
+    <script src="{{site.baseurl}}/assets/js/jquery-1.11.2.js"></script>
+    <script src="{{site.baseurl}}/assets/js/paging.js"></script>
+    <script>
+      var page = new Paging();
+      page.init({
+        target: $('#pageTool'),
+        pagesize: 6,
+        count: 300,
+        current: 1,
+        callback: function(pagecount, size, count) {
+          console.log(arguments)
+          alert('当前第 ' + pagecount + '页,每页 ' + size + '条,总页数：' + count + '页');
+          //动态设置总条数 https://github.com/tianxiangbing/paging
+          page.render({
+            // count: 89,
+            current: pagecount
+          });
+          //这里我写个ajax吧
+
+          //如果你不用ajax分页，你可以直接在这里location.href='xxx.html?page='+pagecount 作跳转，这样的话，页面刷新后，你要传递current进来。
+        }
+      });
+    </script>
     {% endif %}
   </nav>
 </div>
 
-
-<!--<button class="firstPage" onclick="first_click()" ><img src="./imgs/page-icon/left-end.png"/></button>
-<button class="beforePage" onclick="prev_click()" ><img src="./imgs/page-icon/page-left.png"/></button>
-<button>第<input id="currentPage" onchange="choose_page()" type="text" value="1"/>页</button>
-<button>/&nbsp;&nbsp;&nbsp;共<input id="totalPage" type="button" value="3" readonly="readonly">页</button>
-<button class="nextPage" onclick="next_click()"><img src="./imgs/page-icon/page-right.png"/></button>
-<button class="lastPage" onclick="last_click()"><img src="./imgs/page-icon/right-end.png"/></button>-->

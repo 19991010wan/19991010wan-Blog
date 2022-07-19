@@ -104,7 +104,7 @@ function(t, i) { "function" == typeof define && define.amd ? define(["jquery", "
         }), a
     }, e.prototype = {
         init: function(i) { this.settings = t.extend({ callback: null, pagesize: 10, current: 1, prevTpl: "上一页", nextTpl: "下一页", firstTpl: "首页", lastTpl: "末页", ellipseTpl: "...", toolbar: !1, hash: !1, pageSizeList: [5, 10, 15, 20] }, i), this.target = t(this.settings.target), this.container = t('<div id="' + this.id + '" class="ui-paging-container"/>'), this.target.append(this.container), this.render(this.settings), this.format(), this.bindEvent() },
-        render: function(t) { void 0 !== t.count ? this.count = t.count : this.count = this.settings.count, void 0 !== t.pagesize ? this.pagesize = t.pagesize : this.pagesize = this.settings.pagesize, void 0 !== t.current ? this.current = t.current : this.current = this.settings.current, this.pagecount = Math.ceil(this.count / this.pagesize), this.format() },
+        render: function(t) { void 0 !== t.count ? this.count = t.count : this.count = this.settings.count, void 0 !== t.pagesize ? this.pagesize = t.pagesize : this.pagesize = this.settings.pagesize, void 0 !== t.current ? this.current = t.current : this.current = this.settings.current, this.pagecount = Math.ceil({{ paginator.total_pages }}), this.format() },
         bindEvent: function() {
             var i = this;
             this.container.on("click", "li.js-page-action,li.ui-pager", function(e) {
