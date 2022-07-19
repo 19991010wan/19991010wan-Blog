@@ -27,7 +27,7 @@
     {% if paginator.total_pages > 1 %}
     <div class="page-icon">
       <ul>
-        <li><a><i class="fa fa-angle-left"></i></a></li>
+        <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
 <!--        <li><span class="page-disabled"><i class="fa fa-caret-left"></i>上一页</span></li>-->
         <li><span class="page-current">1</span></li>
         <li><a href="#">2</a></li>
@@ -42,21 +42,35 @@
   </nav>
 </div>
 
-<!--<div class="container">
+<div class="container">
   <nav class="pagination" role="pagination">
     {% if paginator.total_pages > 1 %}
-    <div class="page-icon">
-      <a><i class="fa fa-angle-left"></i></a>
-      <span class="page-current">1</span>
-      <a href="#">2</a>
-      <a href="#">3</a>
-      <a href="#">4</a>
-      <a href="#">5</a>
-      <a><i class="fa fa-angle-right"></i></a>
-    </div>
+    <div id="pageTool"></div>
+    <script>
+      var page = new Paging();
+      page.init({
+        target: $('#pageTool'),
+        pagesize: 10,
+        count: 300,
+        current: 1,
+        callback: function(pagecount, size, count) {
+          console.log(arguments)
+          alert('当前第 ' + pagecount + '页,每页 ' + size + '条,总页数：' + count + '页');
+          //动态设置总条数 https://github.com/tianxiangbing/paging
+          page.render({
+            // count: 89,
+            current: pagecount
+          });
+          //这里我写个ajax吧
+
+          //如果你不用ajax分页，你可以直接在这里location.href='xxx.html?page='+pagecount 作跳转，这样的话，页面刷新后，你要传递current进来。
+        }
+      });
+    </script>
     {% endif %}
   </nav>
-</div>-->
+</div>
+
 
 <!--<button class="firstPage" onclick="first_click()" ><img src="./imgs/page-icon/left-end.png"/></button>
 <button class="beforePage" onclick="prev_click()" ><img src="./imgs/page-icon/page-left.png"/></button>
