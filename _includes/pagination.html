@@ -22,32 +22,32 @@
 
 
 
-<div class="container">
+<!--<div class="container">
   <nav class="pagination" role="pagination">
     {% if paginator.total_pages > 1 %}
     <div class="page-icon">
       <ul>
         <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
-<!--        <li><span class="page-disabled"><i class="fa fa-caret-left"></i>上一页</span></li>-->
+        &lt;!&ndash;<li><span class="page-disabled"><i class="fa fa-caret-left"></i>上一页</span></li>&ndash;&gt;
         <li><span class="page-current">1</span></li>
         <li><a href="#">2</a></li>
         <li><a href="#">3</a></li>
         <li><a href="#">4</a></li>
         <li><a href="#">5</a></li>
         <li><a><i class="fa fa-angle-right"></i></a></li>
-<!--        <li><a class="page-next" href="#">下一页<i class="fa fa-caret-right"></i></a></li>-->
+        &lt;!&ndash;<li><a class="page-next" href="#">下一页<i class="fa fa-caret-right"></i></a></li>&ndash;&gt;
       </ul>
     </div>
     {% endif %}
   </nav>
-</div>
+</div>-->
 
 <div class="container">
   <nav class="pagination" role="pagination">
     {% if paginator.total_pages > 1 %}
     <div id="pageTool"></div>
-    <script type="text/javascript" src="{{site.baseurl}}/assets/js/jquery-1.11.2.js"></script>
-    <script type="text/javascript" src="{{site.baseurl}}/assets/js/paging.js"></script>
+    <!--<script type="text/javascript" src="{{site.baseurl}}/assets/js/jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="{{site.baseurl}}/assets/js/paging.js"></script>-->
     <script>
       var page = new Paging();
       page.init({
@@ -56,7 +56,7 @@
         count: 300,
         current: 1,
         callback: function(pagecount, size, count) {
-          console.log(arguments)
+          console.log(arguments)s
           alert('当前第 ' + pagecount + '页,每页 ' + size + '条,总页数：' + count + '页');
           //动态设置总条数 https://github.com/tianxiangbing/paging
           page.render({
