@@ -29,10 +29,10 @@
     <script>
       var page = new Paging();
       var index_page = 0;
-      var pagedata = document.querySelector("pageTool");
+      /*var pagedata = document.querySelector("pageTool");
       var totalpages = pagedata.getAttribute('data-totalpages');
       var nextpage = pagedata.getAttribute('data-nextpage');
-      var previouspage = pagedata.getAttribute('data-previouspage');
+      var previouspage = pagedata.getAttribute('data-previouspage');*/
       page.init({
         target: $('#pageTool'),
         pagesize: 6,
@@ -47,7 +47,7 @@
             current: pagecount
           });
           index_page = this.current
-          console.log("当前页数是" + index_page + totalpages +nextpage + previouspage)
+          // console.log("当前页数是" + index_page + totalpages +nextpage + previouspage)
           location.href="{{ site.baseurl }}/page/{{ paginator.next_page }}/?page="+pagecount
           //这里我写个ajax吧
 
