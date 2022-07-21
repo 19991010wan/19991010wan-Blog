@@ -27,14 +27,30 @@
     <script src="{{site.baseurl}}/assets/js/jquery-1.11.2.js"></script>
     <script src="{{site.baseurl}}/assets/js/paging.js"></script>
     <script>
+      function GetRequest() {
+        var url = location.search; //获取url中"?"符后的字串
+        var theRequest = new Object();
+        if (url.indexOf("?") != -1) {
+          var str = url.substr(1);
+          strs = str.split("&");
+          for (var i = 0; i < strs.length; i++) {
+            theRequest[strs[i].split("=")[0]] = unescape(strs[i].split("=")[1]);
+          }
+        }
+        return theRequest;
+      }
+
       var page = new Paging();
-      // var index_page = 0;
-      // console.log(currentpage)
+      if (GetRequest().page) {
+        indexpage = GetRequest().page;
+      } else {
+        indexpage = 1;
+      }
       page.init({
         target: $('#pageTool'),
         pagesize: 6,
         count: 7,
-        current: currentpage,
+        current: indexpage,
         callback: function(pagecount, size, count) {
           console.log(arguments)
           alert('当前第 ' + pagecount + '页,每页 ' + size + '条,总页数：' + count + '页');
@@ -43,6 +59,15 @@
             // count: 89,
             current: pagecount
           });
+          console.log("123455" + paginator.next_page)
+          if (pagecount - indexpage > 0) {
+            /*for (var i=0;i<pagecount - indexpage;i++){
+              next_page = paginator + .next_page
+            }*/
+            url = "{{ site.baseurl }}/page/{{ paginator.next_page }}/";
+          }else {
+            url = "{{ site.baseurl }}/page/{{ paginator.previous_page }}/";
+          }
           // var index_page = this.current
           /*var pagedata = document.querySelector("#pageTool");
           var totalpages = pagedata.getAttribute('data-totalpages');
