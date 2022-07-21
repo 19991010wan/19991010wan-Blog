@@ -46,10 +46,10 @@
       } else {
         indexpage = 1;
       }
-      console.log("123455" + "{{paginator.next_page}}")
+      // console.log("123455" + "{{paginator.next_page}}")
       page.init({
         target: $('#pageTool'),
-        pagesize: 4,
+        pagesize: "{{ sites.paginate }}",
         count: 9,
         current: indexpage,
         callback: function(pagecount, size, count) {
@@ -78,7 +78,7 @@
           if (pagecount===1){
             location.href = '{{ site.baseurl }}/'
           }else{
-            url = '{{ site.baseurl }}/page/' + pagecount + '/?currentpage=' + pagecount;
+            location.href = '{{ site.baseurl }}/page/' + pagecount + '/?currentpage=' + pagecount;
             // location.href = url + '?currentpage='+pagecount
           }
           //这里我写个ajax吧
