@@ -1,4 +1,4 @@
-<!--<div class="container">
+<div class="container">
   <nav class="pagination" role="pagination">
     <ul>
       {% if paginator.previous_page %}
@@ -18,7 +18,7 @@
       {% endif %}
     </ul>
   </nav>
-</div>-->
+</div>
 
 <div class="container">
   <nav class="pagination" role="pagination">
@@ -28,12 +28,13 @@
     <script src="{{site.baseurl}}/assets/js/paging.js"></script>
     <script>
       var page = new Paging();
-      var index_page = 0;
+      // var index_page = 0;
+      console.log(currentpage)
       page.init({
         target: $('#pageTool'),
         pagesize: 6,
         count: 7,
-        current: 1,
+        current: currentpage,
         callback: function(pagecount, size, count) {
           console.log(arguments)
           alert('当前第 ' + pagecount + '页,每页 ' + size + '条,总页数：' + count + '页');
@@ -42,13 +43,14 @@
             // count: 89,
             current: pagecount
           });
-          index_page = this.current
-          var pagedata = document.querySelector("#pageTool");
+          // var index_page = this.current
+          /*var pagedata = document.querySelector("#pageTool");
           var totalpages = pagedata.getAttribute('data-totalpages');
           var nextpage = pagedata.getAttribute('data-nextpage');
           var previouspage = pagedata.getAttribute('data-previouspage');
-          console.log("当前页数是" + index_page + totalpages +nextpage + previouspage)
-          location.href="{{ site.baseurl }}/page/{{ paginator.next_page }}/?page="+pagecount
+          console.log("当前页数是" + index_page + totalpages +nextpage + previouspage)*/
+
+          location.href='{{ site.baseurl }}/page/{{ paginator.next_page }}/?currentpage='+pagecount
           //这里我写个ajax吧
 
           //如果你不用ajax分页，你可以直接在这里location.href='xxx.html?page='+pagecount 作跳转，这样的话，页面刷新后，你要传递current进来。
