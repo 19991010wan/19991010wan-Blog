@@ -75,8 +75,11 @@
           var nextpage = pagedata.getAttribute('data-nextpage');
           var previouspage = pagedata.getAttribute('data-previouspage');
           console.log("当前页数是" + index_page + totalpages +nextpage + previouspage)*/
-
-          location.href = url + '?currentpage='+pagecount
+          if (pagecount===1){
+            location.href = url
+          }else{
+            location.href = url + '?currentpage='+pagecount
+          }
           //这里我写个ajax吧
 
           //如果你不用ajax分页，你可以直接在这里location.href='xxx.html?page='+pagecount 作跳转，这样的话，页面刷新后，你要传递current进来。
