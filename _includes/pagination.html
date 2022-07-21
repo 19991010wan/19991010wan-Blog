@@ -24,7 +24,7 @@
   <nav class="pagination" role="pagination">
     {% if paginator.total_pages > 1 %}
     <div id="pageTool"></div>
-    <div id="pagedata" data-totalpages="{{ paginator.total_pages }}" data-nextpage="{{ paginator.next_page }}" data-previouspage="{{ paginator.previous_page }}"></div>
+    <span id="pagedata" data-totalpages="{{ paginator.total_pages }}" data-nextpage="{{ paginator.next_page }}" data-previouspage="{{ paginator.previous_page }}" style="display: none"></span>
     <script src="{{site.baseurl}}/assets/js/jquery-1.11.2.js"></script>
     <script src="{{site.baseurl}}/assets/js/paging.js"></script>
     <script>
