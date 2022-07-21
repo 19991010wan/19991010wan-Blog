@@ -23,14 +23,13 @@
 <div class="container">
   <nav class="pagination" role="pagination">
     {% if paginator.total_pages > 1 %}
-    <div id="pageTool"></div>
-    <span id="pagedata" data-totalpages="{{ paginator.total_pages }}" data-nextpage="{{ paginator.next_page }}" data-previouspage="{{ paginator.previous_page }}" style="display: none"></span>
+    <div id="pageTool" data-totalpages="{{ paginator.total_pages }}" data-nextpage="{{ paginator.next_page }}" data-previouspage="{{ paginator.previous_page }}"></div>
     <script src="{{site.baseurl}}/assets/js/jquery-1.11.2.js"></script>
     <script src="{{site.baseurl}}/assets/js/paging.js"></script>
     <script>
       var page = new Paging();
       var index_page = 0;
-      var pagedata = document.querySelector("pagedata");
+      var pagedata = document.querySelector("pageTool");
       var totalpages = pagedata.getAttribute('data-totalpages');
       var nextpage = pagedata.getAttribute('data-nextpage');
       var previouspage = pagedata.getAttribute('data-previouspage');
