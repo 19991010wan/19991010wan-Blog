@@ -59,14 +59,14 @@
             // count: 89,
             current: pagecount
           });
-          console.log("123455" + paginator.next_page)
+          console.log("123455" + "{{paginator.next_page}}")
           if (pagecount - indexpage > 0) {
             /*for (var i=0;i<pagecount - indexpage;i++){
               next_page = paginator + .next_page
             }*/
-            url = "{{ site.baseurl }}/page/{{ paginator.next_page }}/";
+            url = '{{ site.baseurl }}/page/{{ paginator.next_page }}/';
           }else {
-            url = "{{ site.baseurl }}/page/{{ paginator.previous_page }}/";
+            url = '{{ site.baseurl }}/page/{{ paginator.previous_page }}/';
           }
           // var index_page = this.current
           /*var pagedata = document.querySelector("#pageTool");
@@ -75,7 +75,7 @@
           var previouspage = pagedata.getAttribute('data-previouspage');
           console.log("当前页数是" + index_page + totalpages +nextpage + previouspage)*/
 
-          location.href='{{ site.baseurl }}/page/{{ paginator.next_page }}/?currentpage='+pagecount
+          location.href=url + '?currentpage='+pagecount
           //这里我写个ajax吧
 
           //如果你不用ajax分页，你可以直接在这里location.href='xxx.html?page='+pagecount 作跳转，这样的话，页面刷新后，你要传递current进来。
