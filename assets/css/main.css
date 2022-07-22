@@ -1004,18 +1004,20 @@ footer .copyright {
   border: none;
   color: #ddd; }
 
-a.older-posts, a.newer-posts {
+/*a.older-posts, a.newer-posts {
   font-size: 18px;
   display: inline-block;
-  color: #515151;
-  transition: transform .2s; }
+  color: $body-color;
+  transition: transform .2s;
+}
 
 a.older-posts:hover {
-  transform: translateX(5px); }
+  transform: translateX(5px);
+}
 
 a.newer-posts:hover {
-  transform: translateX(-5px); }
-
+  transform: translateX(-5px);
+}*/
 .page-icon {
   flex: 1;
   text-align: center; }
@@ -1044,6 +1046,13 @@ a.newer-posts:hover {
       /*修复行内元素之间空隙间隔*/ }
     .page-icon ul li .page-disabled {
       color: #ccc; }
+
+.statistics {
+  display: block;
+  padding: 2em 0 0 0;
+  border-top: 1px solid #DDDDDD;
+  font-size: .7em;
+  color: #b3b3b3; }
 
 /* - - - - - - - - - - Post Page Styles - - - - - - - - - - */
 .wrap-content {

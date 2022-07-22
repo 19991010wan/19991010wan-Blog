@@ -276,7 +276,7 @@ footer {
   color: #ddd
 }
 
-a.older-posts, a.newer-posts {
+/*a.older-posts, a.newer-posts {
   font-size: 18px;
   display: inline-block;
   color: $body-color;
@@ -289,7 +289,7 @@ a.older-posts:hover {
 
 a.newer-posts:hover {
   transform: translateX(-5px);
-}
+}*/
 
 .page-icon {
   flex: 1;
@@ -330,4 +330,12 @@ a.newer-posts:hover {
       }
     }
   }
+}
+
+.statistics {
+  display: block;
+  padding: 2em 0 0 0;
+  border-top: 1px solid #DDDDDD;
+  font-size: .7em;
+  color: #b3b3b3;
 }
