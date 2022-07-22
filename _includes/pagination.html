@@ -23,7 +23,7 @@
 <div class="container">
   <nav class="pagination" role="pagination">
     {% if paginator.total_pages > 1 %}
-    <div id="pageTool" data-totalpages="{{ paginator.total_pages }}" data-nextpage="{{ paginator.next_page }}" data-previouspage="{{ paginator.previous_page }}"></div>
+    <div id="pageTool"></div>
     <script src="{{site.baseurl}}/assets/js/jquery-1.11.2.js"></script>
     <script src="{{site.baseurl}}/assets/js/paging.js"></script>
     <script>
@@ -60,27 +60,12 @@
         current: indexpage,
         callback: function(pagecount, size, count) {
           console.log(arguments)
-          alert('当前第 ' + pagecount + '页,每页 ' + size + '条,总页数：' + count + '页');
+          // alert('当前第 ' + pagecount + '页,每页 ' + size + '条,总页数：' + count + '页');
           //动态设置总条数 https://github.com/tianxiangbing/paging
           page.render({
             // count: 89,
             current: pagecount
           });
-          /*console.log("按下的page是" + pagecount);
-          if (pagecount - indexpage > 0) {
-            /!*for (var i=0;i<pagecount - indexpage;i++){
-              next_page = paginator + .next_page
-            }*!/
-            url = '{{ site.baseurl }}/page/{{ paginator.next_page }}/';
-          }else {
-            url = '{{ site.baseurl }}/page/{{ paginator.previous_page }}/';
-          }*/
-          // var index_page = this.current
-          /*var pagedata = document.querySelector("#pageTool");
-          var totalpages = pagedata.getAttribute('data-totalpages');
-          var nextpage = pagedata.getAttribute('data-nextpage');
-          var previouspage = pagedata.getAttribute('data-previouspage');
-          console.log("当前页数是" + index_page + totalpages +nextpage + previouspage)*/
           if (pagecount===1){
             location.href = '{{ site.baseurl }}/'
           }else{
