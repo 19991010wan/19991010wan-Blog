@@ -1,4 +1,4 @@
-<section class="sec-content">
+<section>
 
             <div class="content-play">
               <p><a href="javascript:void(0)" onclick="dashangToggle()" class="dashang" title="打赏，支持一下">打赏一个呗</a></p>
@@ -38,7 +38,6 @@
             <div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';"></div>
 
             <style type="text/css">
-                .sec-content{padding: 20px;padding-left: 260px}
               .content-play{width:80%;margin-top: 20px;margin-bottom: 10px;height:40px;}
               .hide_box-play{z-index:999;filter:alpha(opacity=50);background:#666;opacity: 0.5;-moz-opacity: 0.5;left:0;top:0;height:99%;width:100%;position:fixed;display:none;}
               .shang_box-play{width:540px;height:540px;padding:10px;background-color:#fff;border-radius:10px;position:fixed;z-index:1000;left:50%;top:50%;margin-left:-280px;margin-top:-280px;border:1px dotted #dedede;display:none;}
@@ -49,7 +48,7 @@
                 margin-right: 10px;margin-top: 20px;
               }
               .shang_logo{display:block;text-align:center;margin:20px auto;}
-              .shang_tit-play{width: 100%;height: 75px;text-align: center;line-height: 66px;color: #a3a3a3;font-size: 16px;background: url('/images/payimg/cy-reward-title-bg.jpg');font-family: 'Microsoft YaHei';margin-top: 7px;margin-right:2px;}
+              .shang_tit-play{width: 100%;height: 75px;text-align: center;line-height: 66px;color: #a3a3a3;font-size: 16px;background: url("{{site.baseurl}}/assets/img/payimg/cy-reward-title-bg.jpg");font-family: 'Microsoft YaHei';margin-top: 7px;margin-right:2px;}
               .shang_tit-play p{color:#a3a3a3;text-align:center;font-size:16px;}
               .shang_payimg{width:140px;padding:10px;padding-left: 80px; /*border:6px solid #EA5F00;**/margin:0 auto;border-radius:3px;height:140px;display:inline-block;}
               .shang_payimg img{display:inline-block;margin-right:10px;float:left;text-align:center;width:140px;height:140px; }
@@ -60,7 +59,7 @@
               .shang_info-play p,.shang_info-play a{color:#C3C3C3;text-align:center;font-size:12px;text-decoration:none;line-height:2em;}
             </style>
 
-       <ul class="pager">
+       <ul class="paper_pre_next">
         {% if page.previous.url %}
         <li class="previous">
             <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">上一篇：  <span>{{page.previous.title}}</span>
