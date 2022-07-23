@@ -109,6 +109,8 @@
   li>a{
     width:100%;
     padding: 10px 10px;
+    text-decoration: none;
+    color:#404040
   }
 
   li>a>span{
@@ -125,10 +127,6 @@
     padding:10px;
     background-color:#fff;
     border-radius:0;
-  }
-
-  li>a {
-    color:#404040
   }
 
   li>a:hover,

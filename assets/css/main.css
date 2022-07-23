@@ -1154,7 +1154,9 @@ a.newer-posts:hover {
   width: 48%; }
 .paper_pre_next li > a {
   width: 100%;
-  padding: 10px 10px; }
+  padding: 10px 10px;
+  text-decoration: none;
+  color: #404040; }
 .paper_pre_next li > a > span {
   color: gray;
   padding: 10px 10px; }
@@ -1167,8 +1169,6 @@ a.newer-posts:hover {
   padding: 10px;
   background-color: #fff;
   border-radius: 0; }
-.paper_pre_next li > a {
-  color: #404040; }
 .paper_pre_next li > a:hover,
 .paper_pre_next li > a:focus {
   color: #fff;
