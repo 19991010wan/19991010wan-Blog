@@ -1,6 +1,6 @@
 <section>
     <div class="content-play">
-        <p><a href="javascript:void(0)" onclick="dashangToggle()" class="dashang" title="打赏，支持一下">打赏一个呗</a></p>
+        <a href="javascript:void(0)" onclick="dashangToggle()" class="dashang" title="打赏，支持一下">打赏一个呗</a>
         <div class="hide_box-play"></div>
         <div class="shang_box-play">
             <a class="shang_close-play" href="javascript:void(0)" onclick="dashangToggle()" title="关闭"><img src="/images/payimg/close.jpg" alt="取消" /></a>
@@ -197,7 +197,8 @@
             <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">上一篇：  <span>{{page.previous.title}}</span>
             </a>
         </li>
-        {% endif %} {% if page.next.url %}
+        {% endif %}
+        {% if page.next.url %}
         <li class="next">
             <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">下一篇：  <span>{{page.next.title}}</span>
             </a>
