@@ -96,3 +96,12 @@
     }
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .next{
+    float:left;
+  }
+  .previous{
+    float:left;
+  }
+}

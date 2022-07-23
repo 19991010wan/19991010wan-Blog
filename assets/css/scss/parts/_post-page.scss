@@ -90,81 +90,77 @@
   }
 }
 
-.pager li{
-  margin-top: 20px;
-  width:48%
-}
-.next{
-  margin-top: 20px;
-  float:right
-}
-.previous{
-  margin-top: 20px;
-  float:left
-}
-.pager li>a{
-  width:100%;
-  padding: 10px 10px;
-}
-
-.pager li>a>span{
-  padding-right: 10px;
-  color:gray;
-  padding: 10px 10px;
-}
-
-.pager li>span {
-  margin-top: 40px;
-  line-height:1.7;
-  text-transform:uppercase;
-  font-size:13px;
-  font-weight:800;
-  padding:10px;
-  background-color:#fff;
-  border-radius:0;
-}
-.pager li>a {
-  color:#404040
-}
-.pager li>a:hover,
-.pager li>a:focus {
-  color:#fff;
-  background-color:#B9D3EE;
-}
-.pager li>a:hover>span,
-.pager li>a:focus>span{
-  color:#fff;
-}
-::-moz-selection {
-  color:#fff;
-  text-shadow:none;
-  background:#a0b3d6;
-}
-::selection {
-  color:#fff;
-  text-shadow:none;
-  background:#666666;
-}
-img::selection {
-  color:#fff;
-  background:0 0
-}
-img::-moz-selection {
-  color:#fff;
-  background:0 0
-}
-
-@media all and (max-width: 600px) {
+.paper_pre_next {
   .next{
-    float:left;
+    margin-top: 20px;
+    float:right
   }
-  .previous{
-    float:left;
-  }
-}
 
-.footer-social-icon {
-  width: 30px;
-  height: 30px;
-  background-size: 15px;
+  .previous{
+    margin-top: 20px;
+    float:left
+  }
+
+  li {
+    margin-top: 20px;
+    width:48%
+  }
+
+  li>a{
+    width:100%;
+    padding: 10px 10px;
+  }
+
+  li>a>span{
+    color:gray;
+    padding: 10px 10px;
+  }
+
+  li>span {
+    margin-top: 40px;
+    line-height:1.7;
+    text-transform:uppercase;
+    font-size:13px;
+    font-weight:800;
+    padding:10px;
+    background-color:#fff;
+    border-radius:0;
+  }
+
+  li>a {
+    color:#404040
+  }
+
+  li>a:hover,
+  li>a:focus {
+    color:#fff;
+    background-color:#B9D3EE;
+  }
+
+  li>a:hover>span,
+  li>a:focus>span{
+    color:#fff;
+  }
+
+  ::-moz-selection {
+    color:#fff;
+    text-shadow:none;
+    background:#a0b3d6;
+  }
+
+  ::selection {
+    color:#fff;
+    text-shadow:none;
+    background:#666666;
+  }
+
+  img::selection {
+    color:#fff;
+    background:0 0
+  }
+
+  img::-moz-selection {
+    color:#fff;
+    background:0 0
+  }
 }
