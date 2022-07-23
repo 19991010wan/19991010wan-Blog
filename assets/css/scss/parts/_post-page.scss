@@ -93,24 +93,23 @@
 .paper_pre_next {
   .next{
     margin-top: 20px;
-    float:right
+    float:right;
   }
 
   .previous{
     margin-top: 20px;
-    float:left
+    float:left;
   }
 
   li {
     margin-top: 20px;
-    width:48%
   }
 
   li>a{
     width:100%;
     padding: 10px 10px;
     text-decoration: none;
-    color:#404040
+    color:#404040;
   }
 
   li>a>span{
@@ -154,11 +153,11 @@
 
   img::selection {
     color:#fff;
-    background:0 0
+    background:0 0;
   }
 
   img::-moz-selection {
     color:#fff;
-    background:0 0
+    background:0 0;
   }
 }

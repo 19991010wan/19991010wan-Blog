@@ -1150,8 +1150,7 @@ a.newer-posts:hover {
   margin-top: 20px;
   float: left; }
 .paper_pre_next li {
-  margin-top: 20px;
-  width: 48%; }
+  margin-top: 20px; }
 .paper_pre_next li > a {
   width: 100%;
   padding: 10px 10px;
