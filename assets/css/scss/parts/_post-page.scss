@@ -144,8 +144,9 @@
     z-index: 1000;
     left: 50%;
     top: 50%;
-    margin-left: -280px;
-    margin-top: -280px;
+    transform: translate(-50%,-50%);
+    //margin-left: -280px;
+    //margin-top: -280px;
     border: 1px dotted #dedede;
     display: none;
 
@@ -170,7 +171,7 @@
       line-height: 66px;
       color: #a3a3a3;
       font-size: 16px;
-      background: url("{{site.baseurl}}/assets/img/payimg/cy-reward-title-bg.jpg");
+      //background: url("{{site.baseurl}}/assets/img/payimg/cy-reward-title-bg.jpg");
       font-family: 'Microsoft YaHei';
       margin-top: 7px;
       margin-right: 2px;
@@ -183,13 +184,13 @@
     }
 
     .shang_payimg {
-      width: 140px;
+      //width: 140px;
+      //height: 140px;
       padding: 10px;
       padding-left: 80px;
       /*border:6px solid #EA5F00;**/
       margin: 0 auto;
       border-radius: 3px;
-      height: 140px;
       display: inline-block;
 
       img {
