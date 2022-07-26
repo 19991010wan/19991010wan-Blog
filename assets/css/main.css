@@ -836,6 +836,28 @@ table tfoot td {
   flex-wrap: wrap;
   align-items: stretch; }
 
+.navigation-wrapper {
+  display: none;
+  position: fixed;
+  top: 20px;
+  left: 0;
+  float: left;
+  width: 300px;
+  padding: 20px 0;
+  background: rgba(51, 51, 51, 0.98);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+  .navigation-wrapper.visible {
+    display: block; }
+  .navigation-wrapper .cover-navigation {
+    margin-top: 0;
+    width: 100%; }
+    .navigation-wrapper .cover-navigation .navigation {
+      display: inline-block;
+      float: left;
+      position: relative;
+      margin: 0;
+      list-style-type: none; }
+
 .contact .contact-title {
   position: relative;
   color: #333030;
