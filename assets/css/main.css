@@ -857,6 +857,19 @@ table tfoot td {
       position: relative;
       margin: 0;
       list-style-type: none; }
+      .navigation-wrapper .cover-navigation .navigation .navigation__item {
+        display: inline-block;
+        margin-left: 0;
+        line-height: 1em; }
+        .navigation-wrapper .cover-navigation .navigation .navigation__item a {
+          display: inline-block;
+          position: relative;
+          width: 100%;
+          border-color: #666;
+          color: #666;
+          /*opacity: .8; */ }
+          .navigation-wrapper .cover-navigation .navigation .navigation__item a:hover {
+            color: #fff; }
 
 .contact .contact-title {
   position: relative;
