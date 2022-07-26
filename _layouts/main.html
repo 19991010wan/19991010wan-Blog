@@ -12,6 +12,18 @@ layout: default
       <p>{{site.about-author}}</p>
     </div>
   </header> <!-- End Header -->
+  <div class="navigation-wrapper">
+    <div>
+      <nav class="cover-navigation cover-navigation--primary">
+        <ul class="navigation">
+          <li class="navigation__item"><a href="{{site.baseurl}}" title="{{site.blog_button.description}}" class="blog-button">{{site.blog_button.title}}</a></li>
+          {% for item in site.nav %}
+          <li class="navigation__item"><a href="{{item.url}}" title="{{item.description}}">{{item.title}}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
+  </div> <!-- End Nav -->
   <footer>
     <section class="contact">
       <h3 class="contact-title">Contact me</h3>
