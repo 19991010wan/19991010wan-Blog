@@ -69,27 +69,17 @@
 }
 
 .navigation-wrapper {
-  //display: none;
-  //position: relative;
-  //top: 20px;
-  //left: 0;
-  //float: left;
-  //width: 300px;
   padding: 20px 0;
   background: $white;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  text-align: center;
 
   &.visible {
     display: block;
   }
 
   .navigation {
-    display: inline-block;
-    float: left;
-    //position: relative;
-    margin: 0;
     list-style-type: none;
-    text-align: center;
 
     .navigation__item {
       display: inline-block;
@@ -98,7 +88,6 @@
 
       a {
         display: inline-block;
-        //position: relative;
         width: 100%;
         border-color: #666;
         color: #666;
