@@ -665,7 +665,7 @@ html {
 body {
   font-family: 'Lato', sans-serif;
   color: #515151;
-  background-color: #fbfbfb;
+  background-color: #f6f6f6;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
@@ -829,7 +829,7 @@ table tfoot td {
 
 .content-box {
   padding: 20px;
-  padding-left: 320px;
+  padding-left: 340px;
   justify-content: center;
   display: flex;
   flex-direction: row;
@@ -837,37 +837,29 @@ table tfoot td {
   align-items: stretch; }
 
 .navigation-wrapper {
-  position: relative;
-  top: 20px;
-  left: 0;
-  float: left;
   padding: 20px 0;
   background: #ffffff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
   .navigation-wrapper.visible {
     display: block; }
-  .navigation-wrapper .cover-navigation {
-    margin-top: 0;
-    width: 100%; }
-    .navigation-wrapper .cover-navigation .navigation {
+  .navigation-wrapper .navigation {
+    display: inline-block;
+    float: left;
+    margin: 0;
+    list-style-type: none;
+    text-align: center; }
+    .navigation-wrapper .navigation .navigation__item {
       display: inline-block;
-      float: left;
-      position: relative;
-      margin: 0;
-      list-style-type: none; }
-      .navigation-wrapper .cover-navigation .navigation .navigation__item {
+      margin-left: 0;
+      line-height: 1em; }
+      .navigation-wrapper .navigation .navigation__item a {
         display: inline-block;
-        margin-left: 0;
-        line-height: 1em; }
-        .navigation-wrapper .cover-navigation .navigation .navigation__item a {
-          display: inline-block;
-          position: relative;
-          width: 100%;
-          border-color: #666;
-          color: #666;
-          /*opacity: .8; */ }
-          .navigation-wrapper .cover-navigation .navigation .navigation__item a:hover {
-            color: #fff; }
+        width: 100%;
+        border-color: #666;
+        color: #666;
+        /*opacity: .8; */ }
+        .navigation-wrapper .navigation .navigation__item a:hover {
+          color: #263959; }
 
 .contact .contact-title {
   position: relative;
