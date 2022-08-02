@@ -60,7 +60,7 @@
 }
 .content-box {
   padding: 20px;
-  padding-left: 320px;
+  padding-left: 340px;
   justify-content: center;
   display: flex;
   flex-direction: row;
@@ -70,10 +70,10 @@
 
 .navigation-wrapper {
   //display: none;
-  position: relative;
-  top: 20px;
-  left: 0;
-  float: left;
+  //position: relative;
+  //top: 20px;
+  //left: 0;
+  //float: left;
   //width: 300px;
   padding: 20px 0;
   background: $white;
@@ -83,33 +83,29 @@
     display: block;
   }
 
-  .cover-navigation {
-    margin-top: 0;
-    width: 100%;
+  .navigation {
+    display: inline-block;
+    float: left;
+    //position: relative;
+    margin: 0;
+    list-style-type: none;
+    text-align: center;
 
-    .navigation {
+    .navigation__item {
       display: inline-block;
-      float: left;
-      position: relative;
-      margin: 0;
-      list-style-type: none;
+      margin-left: 0;
+      line-height: 1em;
 
-      .navigation__item {
+      a {
         display: inline-block;
-        margin-left: 0;
-        line-height: 1em;
+        //position: relative;
+        width: 100%;
+        border-color: #666;
+        color: #666;
+        /*opacity: .8; */
 
-        a {
-          display: inline-block;
-          position: relative;
-          width: 100%;
-          border-color: #666;
-          color: #666;
-          /*opacity: .8; */
-
-          &:hover {
-            color: #fff;
-          }
+        &:hover {
+          color: #263959;
         }
       }
     }
