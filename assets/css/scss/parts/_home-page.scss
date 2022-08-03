@@ -71,19 +71,19 @@
 .navigation-wrapper {
   padding: 20px 0;
   background: $white;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   text-align: center;
 
   .navigation {
+    display: inline-block;
     list-style-type: none;
 
     .navigation__item {
-      display: inline-block;
-      margin-left: 0;
+      float: left;
+      padding: 4px;
+      border-right: 1px solid;
       line-height: 1em;
 
       a {
-        display: inline-block;
         width: 100%;
         border-color: #666;
         color: #666;
