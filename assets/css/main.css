@@ -849,6 +849,8 @@ table tfoot td {
       .navigation-wrapper .navigation .navigation__item::after {
         content: '|';
         color: #666; }
+      .navigation-wrapper .navigation .navigation__item:last-child::after {
+        content: ''; }
       .navigation-wrapper .navigation .navigation__item a {
         padding: 5px;
         width: 100%;
