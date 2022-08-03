@@ -846,12 +846,15 @@ table tfoot td {
     .navigation-wrapper .navigation .navigation__item {
       float: left;
       padding: 4px;
-      border-right: 1px solid;
       line-height: 1em; }
+      .navigation-wrapper .navigation .navigation__item::after {
+        content: '|';
+        color: #666; }
       .navigation-wrapper .navigation .navigation__item a {
         width: 100%;
         border-color: #666;
         color: #666;
+        text-decoration: none;
         /*opacity: .8; */ }
         .navigation-wrapper .navigation .navigation__item a:hover {
           color: #263959; }
@@ -1414,7 +1417,6 @@ a.newer-posts:hover {
             width: 100%;
             border-color: #666;
             color: #666;
-            text-decoration: none;
             /*opacity: .8; */ }
             .sidebar .navigation-wrapper .navigation .navigation__item a:hover {
               color: #263959; }
