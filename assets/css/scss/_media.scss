@@ -40,8 +40,30 @@
       width: 100%;
       //padding: 20px 0;
       background-color: rgb(55, 65, 178);
-      text-decoration: none;
       text-align: center;
+      margin: -10px;
+
+      .navigation {
+        display: inline-block;
+
+        .navigation__item {
+          float: left;
+          padding: 10px;
+          line-height: 1em;
+
+          a {
+            width: 100%;
+            border-color: #666;
+            color: #666;
+            text-decoration: none;
+            /*opacity: .8; */
+
+            &:hover {
+              color: #263959;
+            }
+          }
+        }
+      }
     }
 
     footer {
