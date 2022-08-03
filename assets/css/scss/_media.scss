@@ -31,15 +31,15 @@
     justify-content: space-between;
     width: 100%;
     padding: 10px;
-    background-color: #ffffff;
+    background-color: $white;
     box-shadow: 0 1px 1px 0 rgba(31, 35, 46, .15);
 
     .navigation-wrapper {
       position: fixed;
       z-index: 10000 !important;
       width: 100%;
-      //padding: 20px 0;
-      background-color: rgb(55, 65, 178);
+      padding: 10px 0;
+      background-color: #f0f0f0;
       text-align: center;
       margin: -10px;
 
@@ -74,7 +74,7 @@
   .about {
     text-align: center;
     max-width: 480px;
-    margin: 10px auto auto;
+    margin: 80px auto auto;
     img {
       width: 100px;
       height: 100px;
