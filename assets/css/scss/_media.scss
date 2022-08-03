@@ -93,19 +93,18 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: stretch;
+
+    .next{
+      float:left;
+    }
+    .previous{
+      float:left;
+    }
   }
 
   .contact-title, .copyright {
     display: none;
   }
-
-  .next{
-    float:left;
-  }
-  .previous{
-    float:left;
-  }
-
 }
 
 /* Extra Small Devices, Phones */
