@@ -86,6 +86,10 @@
         color: #666;
       }
 
+      &:last-child::after {
+        content: '';
+      }
+
       a {
         padding: 5px;
         width: 100%;
