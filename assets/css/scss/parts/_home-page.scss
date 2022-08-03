@@ -79,7 +79,6 @@
 
     .navigation__item {
       float: left;
-      padding: 4px;
       line-height: 1em;
 
       &::after {
@@ -88,6 +87,7 @@
       }
 
       a {
+        padding: 5px;
         width: 100%;
         border-color: #666;
         color: #666;

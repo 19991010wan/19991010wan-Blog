@@ -845,12 +845,12 @@ table tfoot td {
     list-style-type: none; }
     .navigation-wrapper .navigation .navigation__item {
       float: left;
-      padding: 4px;
       line-height: 1em; }
       .navigation-wrapper .navigation .navigation__item::after {
         content: '|';
         color: #666; }
       .navigation-wrapper .navigation .navigation__item a {
+        padding: 5px;
         width: 100%;
         border-color: #666;
         color: #666;
@@ -1411,9 +1411,11 @@ a.newer-posts:hover {
         display: inline-block; }
         .sidebar .navigation-wrapper .navigation .navigation__item {
           float: left;
-          padding: 10px;
           line-height: 1em; }
+          .sidebar .navigation-wrapper .navigation .navigation__item::after {
+            content: ''; }
           .sidebar .navigation-wrapper .navigation .navigation__item a {
+            padding: 10px;
             width: 100%;
             border-color: #666;
             color: #666;

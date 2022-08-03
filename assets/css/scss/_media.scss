@@ -48,10 +48,14 @@
 
         .navigation__item {
           float: left;
-          padding: 10px;
           line-height: 1em;
 
+          &::after {
+            content: '';
+          }
+
           a {
+            padding: 10px;
             width: 100%;
             border-color: #666;
             color: #666;
