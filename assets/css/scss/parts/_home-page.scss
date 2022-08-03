@@ -80,13 +80,18 @@
     .navigation__item {
       float: left;
       padding: 4px;
-      border-right: 1px solid;
       line-height: 1em;
+
+      &::after {
+        content: '|';
+        color: #666;
+      }
 
       a {
         width: 100%;
         border-color: #666;
         color: #666;
+        text-decoration: none;
         /*opacity: .8; */
 
         &:hover {
