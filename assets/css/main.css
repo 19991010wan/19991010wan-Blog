@@ -1444,15 +1444,13 @@ a.newer-posts:hover {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: stretch; }
+    .content-box .next {
+      float: left; }
+    .content-box .previous {
+      float: left; }
 
   .contact-title, .copyright {
-    display: none; }
-
-  .next {
-    float: left; }
-
-  .previous {
-    float: left; } }
+    display: none; } }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   body {
