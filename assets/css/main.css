@@ -841,8 +841,6 @@ table tfoot td {
   background: #ffffff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   text-align: center; }
-  .navigation-wrapper.visible {
-    display: block; }
   .navigation-wrapper .navigation {
     list-style-type: none; }
     .navigation-wrapper .navigation .navigation__item {
@@ -1403,8 +1401,22 @@ a.newer-posts:hover {
       z-index: 10000 !important;
       width: 100%;
       background-color: #3741b2;
-      text-decoration: none;
-      text-align: center; }
+      text-align: center;
+      margin: -10px; }
+      .sidebar .navigation-wrapper .navigation {
+        display: inline-block; }
+        .sidebar .navigation-wrapper .navigation .navigation__item {
+          float: left;
+          padding: 10px;
+          line-height: 1em; }
+          .sidebar .navigation-wrapper .navigation .navigation__item a {
+            width: 100%;
+            border-color: #666;
+            color: #666;
+            text-decoration: none;
+            /*opacity: .8; */ }
+            .sidebar .navigation-wrapper .navigation .navigation__item a:hover {
+              color: #263959; }
     .sidebar footer {
       margin-bottom: 10px; }
 
