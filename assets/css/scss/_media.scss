@@ -34,6 +34,16 @@
     background-color: #ffffff;
     box-shadow: 0 1px 1px 0 rgba(31, 35, 46, .15);
 
+    .navigation-wrapper {
+      position: fixed;
+      z-index: 10000 !important;
+      width: 100%;
+      //padding: 20px 0;
+      background-color: rgb(55, 65, 178);
+      text-decoration: none;
+      text-align: center;
+    }
+
     footer {
       margin-bottom: 10px;
     }
@@ -49,7 +59,7 @@
       border-radius: 100%;
       margin-bottom: 10px;
     }
-}
+  }
 
   .content-box {
     padding: 20px 10px;
@@ -60,9 +70,16 @@
     align-items: stretch;
   }
 
-.contact-title, .copyright {
-  display: none;
-}
+  .contact-title, .copyright {
+    display: none;
+  }
+
+  .next{
+    float:left;
+  }
+  .previous{
+    float:left;
+  }
 
 }
 
@@ -94,14 +111,5 @@
         }
       }
     }
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .next{
-    float:left;
-  }
-  .previous{
-    float:left;
   }
 }
