@@ -3,29 +3,52 @@ layout: main
 title: 所有文章
 permalink: /archive/
 ---
+
 <section class="blog-archive">
-    <h1>关于我</h1>
+    <!-- Article List -->
+    <div class="mini-post-list js-result d-none">
+        {%- assign _sorted_list = site.posts -%}
+        {%- assign _sorted_list = _sorted_list | sort: 'date' -%}
+        {%- assign _sorted_list = _sorted_list | reverse -%}
 
-    <h2>个人简介</h2>
 
-    <h3>万志杰，男，北京邮电大学软件工程硕士在读。
-        计算机基础知识掌握扎实，充满激情的工作态度，较强的团队协同作战能力，具备独立开发的能力，擅于发现并解决问题。
-        擅长前端和python，喜爱编程。
-        执行力强、责任感高、集体荣誉感强、敢于担当。
-    </h3>
+        {%- for _article in _sorted_list -%}
+        {%- assign _tags = '' -%}
+        {%- for _tag in _article.tags -%}
+        {%- assign _tag_encode = _tag | strip | url_encode -%}
+        {%- if forloop.last -%}
+        {%- assign _tags = _tags | append: _tag_encode -%}
+        {%- else -%}
+        {%- assign _tags = _tags | append: _tag_encode | append: ',' -%}
+        {%- endif -%}
+        {%- endfor -%}
 
-    <h2>博客主题</h2>
+        {% comment %} group by year {% endcomment %}
+        {%- assign _currentdate = _article.date | date: '%Y' -%}
+        {%- if _currentdate != _date -%}
+        {%- unless forloop.first -%}{%- endunless -%}
+        <section>
+					<span class="fa listing-seperator">
+						<span class="tag-text">{{ _currentdate }}</span>
+					</span>
+                    {%- assign _date = _currentdate -%}
+                    {%- endif -%}
 
-    <h3>这个博客是我们大家的，我也很高兴大家使用我的模板。
-        如果你想搭建一个跟我一样的博客，可以看我的。
-        有关于博客主题的建议和意见都可以提给我，让我们一起来打造一个精美的主题吧~
-        博客源码在 <a target="_blank" href='https://github.com/19991010wan/19991010wan-Blog'>Github</a> 上，你的 Star 是我更新的动力，谢谢~
-        博客模板会一直持续更新，请持续关注我，谢谢~
-    </h3>
-
-    <h2>技术支持</h2>
-
-    <h3>本博客采用Github Page + Jekyll技术实现</h3>
-    <h3>搭建之前请先阅读 <a target="_blank" href='http://jekyllcn.com/docs/home/'>Jekyll语法</a> 和 <a target="_blank" href='https://www.w3cschool.cn/doc_liquid/'>Liquid语法</a></h3>
-    <h3>如果你想搭建一个跟我一样的博客，可以看我的<a href=""> Jekyll 搭建个人博客</a></h3>
+                    <div class="post-preview item" data-tags="{{ _tags }}">
+                        <a href="{{ _article.url | prepend: site.baseurl }}">
+                            <h2 class="post-title">
+                                {{ _article.title }}
+                            </h2>
+                            {% if _article.subtitle %}
+                            <h3 class="post-subtitle">
+                                {{ _article.subtitle }}
+                            </h3>
+                            {% endif %}
+                        </a>
+                        <hr>
+                    </div>
+                    {%- if forloop.last -%}
+        </section>{%- endif -%}
+    {% endfor %}
+    </div>
 </section>
