@@ -1392,6 +1392,41 @@ a.newer-posts:hover {
     font-weight: normal;
     margin: 15px 0 0 10px; }
 
+/* - - - - - - - - - - archive Styles - - - - - - - - - - */
+.blog-archive {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 0 35px 20px; }
+  .blog-archive .mini-post-list {
+    margin: 20px 0 15px 0; }
+    .blog-archive .mini-post-list .tag-text {
+      font-weight: 200; }
+    .blog-archive .mini-post-list .post-preview {
+      position: relative; }
+      .blog-archive .mini-post-list .post-preview > a .post-title {
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 20px; }
+      .blog-archive .mini-post-list .post-preview > a .post-subtitle {
+        font-size: 13px; }
+      .blog-archive .mini-post-list .post-preview > .post-meta {
+        position: absolute;
+        right: 5px;
+        bottom: 0;
+        margin: 0;
+        font-size: 12px;
+        line-height: 12px; }
+      @media only screen and (min-width: 768px) {
+        .blog-archive .mini-post-list .post-preview {
+          margin-left: 20px; }
+          .blog-archive .mini-post-list .post-preview > a > .post-title {
+            font-size: 18px;
+            line-height: 1.3; }
+          .blog-archive .mini-post-list .post-preview > a > .post-subtitle {
+            font-size: 14px; }
+          .blog-archive .mini-post-list .post-preview .post-meta {
+            font-size: 18px; } }
+
 /* - - - - - - - - - - Media Styles - - - - - - - - - - */
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
