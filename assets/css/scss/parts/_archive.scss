@@ -1,0 +1,49 @@
+.blog-archive {
+  width: 100%;
+  background-color: $white;
+  padding: 0 35px 20px;
+
+  .mini-post-list {
+    margin: 20px 0 15px 0;
+    .tag-text {
+      font-weight: 200;
+      //.sans-serif;
+    }
+    .post-preview {
+      position: relative;
+      > a {
+        .post-title {
+          font-size: 16px;
+          font-weight: 500;
+          margin-top: 20px;
+        }
+        .post-subtitle {
+          font-size: 13px;
+        }
+      }
+      > .post-meta {
+        position: absolute;
+        right: 5px;
+        bottom: 0;
+        margin: 0;
+        font-size: 12px;
+        line-height: 12px;
+      }
+      @media only screen and (min-width: 768px) {
+        margin-left: 20px;
+        > a {
+          > .post-title {
+            font-size: 18px;
+            line-height: 1.3;
+          }
+          > .post-subtitle {
+            font-size: 14px;
+          }
+        }
+        .post-meta {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
