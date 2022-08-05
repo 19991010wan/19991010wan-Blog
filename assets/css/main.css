@@ -1408,20 +1408,19 @@ a.newer-posts:hover {
     .blog-archive .listing-seperator::before {
       margin-right: 5px; }
     .blog-archive .listing-seperator .tag-text {
-      font-weight: 200; }
+      font-weight: 200;
+      font-family: -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB",STHeiti,"Microsoft YaHei","Microsoft JhengHei","Source Han Sans SC","Noto Sans CJK SC","Source Han Sans CN","Noto Sans SC","Source Han Sans TC","Noto Sans CJK TC","WenQuanYi Micro Hei",SimSun,sans-serif; }
   .blog-archive .post-preview {
     position: relative; }
     .blog-archive .post-preview > a .post-title {
       font-size: 16px;
       font-weight: 500;
       margin-top: 20px; }
-    .blog-archive .post-preview > .post-meta {
-      position: absolute;
-      right: 5px;
-      bottom: 0;
-      margin: 0;
-      font-size: 12px;
-      line-height: 12px; }
+    .blog-archive .post-preview hr {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border: 0;
+      border-top: 1px solid #eee; }
 
 /* - - - - - - - - - - Media Styles - - - - - - - - - - */
 /* Medium Devices, Desktops */
