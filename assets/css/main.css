@@ -1413,6 +1413,7 @@ a.newer-posts:hover {
   .blog-archive .post-preview {
     position: relative; }
     .blog-archive .post-preview > a {
+      color: #333030;
       text-decoration: none; }
       .blog-archive .post-preview > a .post-title {
         font-size: 16px;
