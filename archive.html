@@ -26,23 +26,25 @@ permalink: /archive/
     {%- assign _currentdate = _article.date | date: '%Y' -%}
     {%- if _currentdate != _date -%}
     {%- unless forloop.first -%}{%- endunless -%}
-    <section>
+    <div>
+        <section>
         <span class="fa listing-seperator">
             <span class="tag-text">{{ _currentdate }}</span>
         </span>
 
-        {%- assign _date = _currentdate -%}
-        {%- endif -%}
+            {%- assign _date = _currentdate -%}
+            {%- endif -%}
 
-        <div class="post-preview" data-tags="{{ _tags }}">
-            <a href="{{ _article.url | prepend: site.baseurl }}">
-                <h2 class="post-title">
-                    {{_article.date | date: '%Y-%m-%d'}}-{{ _article.title }}
-                </h2>
-            </a>
-            <hr>
-        </div>
-        {%- if forloop.last -%}
-    </section>{%- endif -%}
-    {% endfor %}
+            <div class="post-preview" data-tags="{{ _tags }}">
+                <a href="{{ _article.url | prepend: site.baseurl }}">
+                    <h2 class="post-title">
+                        {{_article.date | date: '%Y-%m-%d'}}-{{ _article.title }}
+                    </h2>
+                </a>
+                <hr>
+            </div>
+            {%- if forloop.last -%}
+        </section>{%- endif -%}
+        {% endfor %}
+    </div>
 </section>
