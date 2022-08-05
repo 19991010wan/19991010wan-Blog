@@ -1397,6 +1397,11 @@ a.newer-posts:hover {
   width: 100%;
   background-color: #ffffff;
   padding: 0 35px 20px; }
+  .blog-archive h1 {
+    font-size: 30px;
+    text-align: center;
+    line-height: 1.3;
+    color: #263959; }
   .blog-archive .listing-seperator {
     color: #0085a1;
     font-size: 21px !important; }
