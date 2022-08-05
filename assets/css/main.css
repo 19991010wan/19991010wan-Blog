@@ -1288,52 +1288,54 @@ a.newer-posts:hover {
   text-align: center;
   margin: 20px auto;
 }*/
-.paper_pre_next .next {
-  margin-top: 20px;
-  float: right; }
-.paper_pre_next .previous {
-  margin-top: 20px;
-  float: left; }
-.paper_pre_next li {
-  margin-top: 20px; }
-.paper_pre_next li > a {
-  width: 100%;
-  padding: 10px 10px;
-  text-decoration: none;
-  color: #404040; }
-.paper_pre_next li > a > span {
-  color: gray;
-  padding: 10px 10px; }
-.paper_pre_next li > span {
-  margin-top: 40px;
-  line-height: 1.7;
-  text-transform: uppercase;
-  font-size: 13px;
-  font-weight: 800;
-  padding: 10px;
-  background-color: #fff;
-  border-radius: 0; }
-.paper_pre_next li > a:hover,
-.paper_pre_next li > a:focus {
-  color: #fff;
-  background-color: #B9D3EE; }
-.paper_pre_next li > a:hover > span,
-.paper_pre_next li > a:focus > span {
-  color: #fff; }
-.paper_pre_next ::-moz-selection {
-  color: #fff;
-  text-shadow: none;
-  background: #a0b3d6; }
-.paper_pre_next ::selection {
-  color: #fff;
-  text-shadow: none;
-  background: #666666; }
-.paper_pre_next img::selection {
-  color: #fff;
-  background: 0 0; }
-.paper_pre_next img::-moz-selection {
-  color: #fff;
-  background: 0 0; }
+.paper_pre_next {
+  padding: 0 0 40px 0; }
+  .paper_pre_next .next {
+    margin-top: 20px;
+    float: right; }
+  .paper_pre_next .previous {
+    margin-top: 20px;
+    float: left; }
+  .paper_pre_next li {
+    margin-top: 20px; }
+  .paper_pre_next li > a {
+    width: 100%;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: #404040; }
+  .paper_pre_next li > a > span {
+    color: gray;
+    padding: 10px 10px; }
+  .paper_pre_next li > span {
+    margin-top: 40px;
+    line-height: 1.7;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 800;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 0; }
+  .paper_pre_next li > a:hover,
+  .paper_pre_next li > a:focus {
+    color: #fff;
+    background-color: #B9D3EE; }
+  .paper_pre_next li > a:hover > span,
+  .paper_pre_next li > a:focus > span {
+    color: #fff; }
+  .paper_pre_next ::-moz-selection {
+    color: #fff;
+    text-shadow: none;
+    background: #a0b3d6; }
+  .paper_pre_next ::selection {
+    color: #fff;
+    text-shadow: none;
+    background: #666666; }
+  .paper_pre_next img::selection {
+    color: #fff;
+    background: 0 0; }
+  .paper_pre_next img::-moz-selection {
+    color: #fff;
+    background: 0 0; }
 
 /* - - - - - - - - - - Tag Styles - - - - - - - - - - */
 .blog-tags {
